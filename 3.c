@@ -14,6 +14,7 @@ Date: 21 Sept, 2024.
 int main()
 {
 	struct rlimit r;
+	printf("hello\n");
 	if(getrlimit(RLIMIT_NOFILE,&r)==0)
 	{
 		printf("Soft limit: %ld\n",(long)r.rlim_cur);
